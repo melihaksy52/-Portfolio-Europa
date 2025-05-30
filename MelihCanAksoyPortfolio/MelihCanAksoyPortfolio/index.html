@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melih Can Aksoy | Web Geliştirici</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-placeholder"></div>
+            <ul class="nav-links">
+                <li><a href="#hero" data-lang-key="navHome">Ana Sayfa</a></li>
+                <li><a href="#about" data-lang-key="navAbout">Hakkımda</a></li>
+                <li><a href="#skills" data-lang-key="navSkills">Yetenekler</a></li>
+                <li><a href="#portfolio" data-lang-key="navPortfolio">Projelerim</a></li>
+                <li><a href="#contact" data-lang-key="navContact">İletişim</a></li>
+            </ul>
+            <div class="language-switcher">
+                <select id="lang-select">
+                    <option value="tr">TR</option>
+                    <option value="en">EN</option>
+                    <option value="de">DE</option>
+                    <option value="fr">FR</option>
+                </select>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <header id="hero" class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1 class="ghost-text" data-lang-key="heroTitle">WEB SİTEME HOŞ GELDİN!</h1>
+            <a href="#portfolio" class="btn btn-primary animate-button" data-lang-key="heroButton">Projelerimi Gör</a>
+        </div>
+        <div class="scroll-down-indicator">
+            <a href="#about"><span data-lang-key="scrollDown">Kaydır</span><span></span></a>
+        </div>
+    </header>
+
+    <section id="about" class="about-section content-section">
+        <div class="container">
+            <h2 class="section-title" data-lang-key="aboutTitle">Hakkımda</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="images/profile-pic.jpg" alt="Melih Can Aksoy Profil Fotoğrafı">
+                </div>
+                <div class="about-text">
+                    <p data-lang-key="aboutP1">Merhaba! Ben Melih Can Aksoy, 22 yaşındayım ve Türkiye'de yaşıyorum. Teknolojiye ve tasarıma olan tutkumla, kullanıcı dostu ve estetik web deneyimleri oluşturuyorum. Özellikle frontend teknolojilerine odaklanarak kendimi sürekli geliştiriyor ve yenilikçi çözümler üretmeye çalışıyorum.</p>
+                    <p data-lang-key="aboutP2">Modern web standartlarına uygun, performanslı ve etkileşimli uygulamalar geliştirmek benim için bir yaşam biçimi. Her projede, detaylara verdiğim önem ve analitik düşünme becerilerimle fark yaratmayı hedeflerim. Yeni şeyler öğrenmeye ve karşılaştığım zorlukların üstesinden gelmeye her zaman açığım.</p>
+                    <a href="#contact" class="btn btn-white" data-lang-key="contactMeButton">Benimle İletişime Geç</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills-section content-section">
+        <div class="container">
+            <h2 class="section-title" data-lang-key="skillsTitle">Yeteneklerim</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <i data-feather="figma"></i>
+                    <h3 data-lang-key="skillUiUx">UI/UX Tasarım</h3>
+                    <p data-lang-key="skillUiUxDesc">Kullanıcı odaklı, sezgisel ve estetik arayüz tasarımları.</p>
+                </div>
+                <div class="skill-item">
+                    <i data-feather="code"></i>
+                    <h3 data-lang-key="skillFrontend">Frontend Geliştirme</h3>
+                    <p data-lang-key="skillFrontendDesc">HTML, CSS ve JavaScript gibi teknolojilerle modern arayüzler.</p>
+                </div>
+                <div class="skill-item">
+                    <i data-feather="database"></i>
+                    <h3 data-lang-key="skillDb">SQL Veritabanı</h3>
+                    <p data-lang-key="skillDbDesc">SQL (PostgreSQL, MySQL) veritabanları ile çalışma.</p>
+                </div>
+                 </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio-section content-section">
+        <div class="container">
+            <h2 class="section-title" data-lang-key="portfolioTitle">Projelerim</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="images/project1.gif" alt="Kişisel Portfolyo Sitesi GIF">
+                    <div class="portfolio-info">
+                        <h3 data-lang-key="project1Name">Kişisel Portfolyo Sitesi</h3>
+                        <p data-lang-key="project1Desc">HTML, CSS ve JavaScript ile oluşturulmuş bu kişisel portfolyo sitesi.</p>
+                        <a href="https://github.com/melihaksy52/website" target="_blank" class="btn btn-secondary" data-lang-key="projectButton">Detayları Gör</a>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="images/project2.gif" alt="Uzay Gemisi Savaşı Oyunu GIF">
+                    <div class="portfolio-info">
+                        <h3 data-lang-key="project2Name">Uzay Gemisi Savaşı Oyunu</h3>
+                        <p data-lang-key="project2Desc">Python (Pygame) kullanılarak geliştirilmiş klasik bir 2D uzay gemisi savaşı oyunu.</p>
+                        <a href="https://github.com/melihaksy52/UzayGemisiSavasi" target="_blank" class="btn btn-secondary" data-lang-key="projectButton">Detayları Gör</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="travel-europe" class="content-section travel-section">
+        <div class="container">
+            <h2 class="section-title travel-title-europe" data-lang-key="travelledEuropeTitle">Avrupa'da Gezdiğim Ülkeler</h2>
+            <div class="flags-grid">
+                <div class="flag-item" title="Almanya">
+                    <img src="https://flagcdn.com/de.svg" alt="Almanya Bayrağı">
+                </div>
+                <div class="flag-item" title="Fransa">
+                    <img src="https://flagcdn.com/fr.svg" alt="Fransa Bayrağı">
+                </div>
+                <div class="flag-item" title="İspanya">
+                    <img src="https://flagcdn.com/es.svg" alt="İspanya Bayrağı">
+                </div>
+                <div class="flag-item" title="İtalya">
+                    <img src="https://flagcdn.com/it.svg" alt="İtalya Bayrağı">
+                </div>
+                <div class="flag-item" title="İsviçre">
+                    <img src="https://flagcdn.com/ch.svg" alt="İsviçre Bayrağı">
+                </div>
+                <div class="flag-item" title="İsveç">
+                    <img src="https://flagcdn.com/se.svg" alt="İsveç Bayrağı">
+                </div>
+                <div class="flag-item" title="Norveç">
+                    <img src="https://flagcdn.com/no.svg" alt="Norveç Bayrağı">
+                </div>
+                <div class="flag-item" title="Birleşik Krallık">
+                    <img src="https://flagcdn.com/gb.svg" alt="Birleşik Krallık Bayrağı">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="travel-asia" class="content-section travel-section">
+        <div class="container">
+            <h2 class="section-title travel-title-asia" data-lang-key="travelledAsiaTitle">Asya'da Gezdiğim Ülkeler</h2>
+            <div class="flags-grid">
+                <div class="flag-item" title="Çin">
+                    <img src="https://flagcdn.com/cn.svg" alt="Çin Bayrağı">
+                </div>
+                <div class="flag-item" title="Japonya">
+                    <img src="https://flagcdn.com/jp.svg" alt="Japonya Bayrağı">
+                </div>
+                <div class="flag-item" title="Tayland">
+                    <img src="https://flagcdn.com/th.svg" alt="Tayland Bayrağı">
+                </div>
+                <div class="flag-item" title="Endonezya">
+                    <img src="https://flagcdn.com/id.svg" alt="Endonezya Bayrağı">
+                </div>
+                <div class="flag-item" title="Tayvan">
+                    <img src="https://flagcdn.com/tw.svg" alt="Tayvan Bayrağı">
+                </div>
+                <div class="flag-item" title="Filipinler">
+                    <img src="https://flagcdn.com/ph.svg" alt="Filipinler Bayrağı">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contact" class="contact-section content-section">
+        <div class="container">
+            <h2 class="section-title" data-lang-key="contactTitle">İletişim</h2>
+            <p class="contact-intro" data-lang-key="contactIntro">Bir projeniz mi var veya sadece merhaba mı demek istiyorsunuz? Benimle iletişime geçmekten çekinmeyin!</p>
+            <form id="contact-form" class="contact-form">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" required data-lang-placeholder-key="formNamePlaceholder">
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" required data-lang-placeholder-key="formEmailPlaceholder">
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" rows="5" required data-lang-placeholder-key="formMessagePlaceholder"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" data-lang-key="formSubmitButton">Mesaj Gönder</button>
+            </form>
+            <div class="social-links">
+                <a href="https://github.com/melihaksy52" target="_blank" title="GitHub"><i data-feather="github"></i></a>
+                <a href="https://www.linkedin.com/in/melih-can-aksoy-b0429a231/" target="_blank" title="LinkedIn"><i data-feather="linkedin"></i></a>
+                <a href="https://x.com/mozzers52" target="_blank" title="X (Twitter)">
+                    <img src="https://img.icons8.com/?size=100&id=fJp7hepMryiw&format=png&color=FFFFFF" alt="X (Twitter) İkonu" class="social-icon-img">
+                </a>
+                <a href="https://steamcommunity.com/profiles/76561199177954770/" target="_blank" title="Steam">
+                    <img src="https://img.icons8.com/?size=100&id=CLYbf9TOnCo7&format=png&color=FFFFFF" alt="Steam İkonu" class="social-icon-img">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span id="currentYear"></span> Melih Can Aksoy. <span data-lang-key="footerRights">Tüm hakları saklıdır.</span></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>
